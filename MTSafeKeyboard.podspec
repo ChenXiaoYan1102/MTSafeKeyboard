@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MTSafeKeyboard"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "MTSafeKeyboard的一个简单示范工程."
 
   s.description  = <<-DESC
