@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>character_8</key>
+	<integer>10</integer>
+	<key>character_7</key>
+	<integer>11</integer>
+	<key>character_6</key>
+	<integer>12</integer>
+	<key>character_5</key>
+	<integer>14</integer>
+	<key>character_4</key>
+	<integer>17</integer>
+	<key>character_3</key>
+	<integer>18</integer>
+	<key>character_9</key>
+	<integer>24</integer>
+
+
+	<key>character_thick_12</key>
+	<integer>12</integer>
+	<key>character_thick_11</key>
+	<integer>14</integer>
+	<key>character_thick_2</key>
+	<integer>17</integer>
+	<key>character_thick_1</key>
+	<integer>18</integer>
+
+	<key>character_10</key>
+	<integer>10</integer>
+	<key>character_11</key>
+	<integer>11</integer>
+	<key>character_12</key>
+	<integer>12</integer>
+	<key>character_13</key>
+	<integer>13</integer>
+	<key>character_14</key>
+	<integer>14</integer>
+	<key>character_15</key>
+	<integer>15</integer>
+	<key>character_16</key>
+	<integer>16</integer>
+	<key>character_17</key>
+	<integer>17</integer>
+	<key>character_18</key>
+	<integer>18</integer>
+	<key>character_20</key>
+	<integer>20</integer>
+	<key>character_22</key>
+	<integer>22</integer>
+	<key>character_24</key>
+	<integer>24</integer>
+	<key>character_28</key>
+	<integer>28</integer>
+	<key>character_36</key>
+	<integer>36</integer>
+</dict>
+</plist>

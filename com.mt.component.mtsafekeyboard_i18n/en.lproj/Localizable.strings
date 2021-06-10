@@ -1,0 +1,900 @@
+﻿/*
+ Localizable.strings
+ UCComponent
+ 
+ Created by jingjq on 15/6/8.
+ Copyright (c) 2015年 ND. All rights reserved.
+ */
+
+
+//登录 / 服务端异常返回解析
+"UC/ACCOUNT_NOT_EXIST" = "Account doesn't exist.";
+"UC/INVALID_LOGIN_NAME" = "无效的帐号";
+"UC/PASSWORD_NOT_CORRECT" = "Invalid password";
+"UC/PASSWORD_SAME" = "New password should be different from the old one.";
+"UC/LOGIN_FAILURE" = "Failed to log in.";
+"UC/NONCE_INVALID" = "Invalid Nonce string";
+"UC/AUTH_INVALID_TIMESTAMP" = "Invalid timestamp which is different from the system time (> 5 minutes).";
+"UC/AUTH_INVALID_TOKEN" = "Invalid authorization token.";
+"UC/AUTH_TOKEN_EXPIRED" = "Authorization token has expired.";
+"UC/MAC_SIGN_INVALID" = "Mac signature error";
+"UC/TOKEN_REFRESH_FAILURE" = "Failed to update the token.";
+"UC/LOGOUT_FAILURE" = "Failed to exit.";
+"UC/PHONE_NUMBER_FORMAT_INVALID" = "Invalid phone number format";
+"UC/INVALID_ARGUMENT" = "Invalid parameter format";
+"UC/INVALID_ARGUMENT_LIMIT" = "Illegal parameter, limit range [1,200]";
+"UC/SMS_SEND_FAILURE" = "Failed to send the message.";
+"UC/PHONE_HAS_REGISTER" = "The number already exists.";
+"UC/OLD_PHONE_NOT_CHECK" = "Failed to verify the original phone number";
+"UC/PHONE_NOT_BINDING" = "The user is not bound with phone number.";
+"UC/SMS_EXPIRED" = "Failed to send the message or expired.";
+"UC/SMS_INVALID" = "Invalid OTP";
+"UC/SMS_OVER_FREQUENT" = "Can only send a message within a minute";
+"UC/SMSCODE_ERROR_OVER_SUM" = "Try to get new OTP";
+"UC/SMS_OVER_SUM" = "Can only send 15 messages to a phone number in a day";
+"UC/SMS_TYPE_INVALID" = "Invalid OTP type";
+"UC/PASSWORD_INVALID" = "Invalid password.";
+"UC/REQUIRE_ARGUMENT" = "Missing parameter";
+"UC/CHECK_ERROR" = "Failed to verify";
+"UC/AUTH_DENIED" = "Failed. Access denied.";
+"UC/ERROR_ARGUMENT" = "Parameter error";
+"UC/NOT_FOUND" = "URL doesn't exist.";
+"UC/INTERNAL_SERVER_ERROR" = "Server error.!";
+"UC/IDENTIFY_CODE_INVALID" = "Wrong code, enter again";
+"UC/ACCOUNT_LOCKED" = "Failed. Account has been locked. Please try again in 5 minutes.";
+"UC/IDENTIFY_CODE_REQUIRED" = "Please enter OTP";
+"UCC_Msg_Session_expired" = "Failed. Please try again.";
+"UC/PASSPORT_EXIST_MOBILE" = "The phone has been linked to another account. Please re-enter the phone number";
+"UC/ORG_LOGIN_FAILURE" = "Failed to log in";
+"UC/NO_PERMISSION_SEND_ISMS" = "No permission to send international SMS";
+
+//角色
+"UC/AUTH_EXTRA_INVALID" = "Invalid role parameter.";
+"UC/ROLE_EXISTED" = "The role already exists.";
+"UC/ROLE_NAME_EXISTED" = "The role name already exists.";
+"UC/ROLE_NOT_EXIST" = "The role doesn't exist.";
+"UC/ADD_ROLE_FAILURE" = "Failed to add the role.";
+"UC/UPDATE_ROLE_FAILURE" = "Failed to update the role.";
+"UC/DELETE_ROLE_FAILURE" = "Failed to delete the role.";
+"UC/GET_REALM_ROLES_FAILURE" = "Failed to get role list.";
+"UC/GET_ACCOUNT_ROLES_FAILURE" = "Failed to get role list.";
+"UC/ROLE_BINDED" = "The role is bound.";
+"UC/ROLE_NOT_BINDED" = "The role is not bound.";
+"UC/BIND_ROLE_FAILURE" = "Failed to bind.";
+"UC/ROMOVE_ROLE_FAILURE" = "Failed to unbind.";
+"UC/ROLE_REALM_NOT_EQUAL" = "The role realms are different.";
+
+//组织
+"UC/ORG_NAME_EXIST" = "The name already exists.";
+"UC/NODE_NAME_EXIST" = "The name already exist in this organization.";
+"UC/ORG_NOT_EXIST" = "The organization doesn't exist.";
+"UC/NODE_NOT_EXIST" = "The node doesn't exist.";
+"UC/USER_NOT_EXIST" = "The selected user doesn't exist.";
+"UC/INVALID_DNAME" = "Illegal DN name.";
+"UC/INVALID_ATTRIBUTE_VALUE" = "Invalid attribute.";
+"UC/SOURCE_NODE_NOT_EXIST" = "The originating node doesn't exist.";
+"UC/NODE_NOT_MOVE" = "No need to move the node.";
+"UC/TARGET_NODE_INVALID" = "The target should not be yourself.";
+"UC/TARGET_NODE_NOT_EXIST" = "The target node doesn't exist.";
+"UC/PARENT_NODE_NOT_EXIST" = "The father node doesn't exist.";
+"UC/NODE_MOVE_FAILURE" = "Failed to move the node.";
+"UC/NODE_REMOVE_FAILURE" = "Failed to delete the node.";
+"UC/NODE_ADD_FAILURE" = "Failed to add a node.";
+"UC/ORG_OTHER_ERROR" = "Internal organization service error";
+"UC/ORG_USER_CODE_HAS_EXIST" = "The Job ID already exists.";
+"UC/USER_NAME_BLANK" = "Enter the user name";
+"UC/REAL_NAME_BLANK" = "Enter the real name";
+"UC/MOBILE_BLANK" = "Enter the mobile phone number.";
+"UC/USERNAME_INVALID" = "Invalid user name. (Start with a letter, containing letters, numbers, 、_、@, up to 20 characters.";
+"UC/ORG_NODE_TYPE_NOT_EXIST" = "The node type doesn't exist.";
+"UC/USERNAME_EXIST" = "The user name already exists.";
+"UC/BIZ_USER_NOT_EXIST" = "Organization user does not exist";
+"UC/REALUSER_INSERT_TO_BIZNODE" = "You can't add real users to business node.";
+"UC/NO_PERMISSION_DELETE_ORG_USER" = "You can't delete organization users here.";
+"UC/NO_DELETE_NOT_ORG_USER" = "Failed to delete.";
+"UC/ADD_USER_FAILURE" = "Failed to add a user.";
+"UC/NODE_UPDATE_FAILURE" = "Failed to update.";
+"UC/NOT_EMPTY_NODE_ERROR" = "Failed to delete.";
+"UC/ORG_FULL_NAME_BLANK" = "Enter the organization name";
+"UC/ORG_NAME_TOO_LONG" = "Organization account is too long. You can write it in organization name, org_full_name";
+"UC/ORG_INSERT_TO_CAS" = "Failed to insert org table, CASSANDRA.";
+"UC/ORG_INSERT_TO_MYSQL" = "Failed to insert org table, Mysql.";
+"UC/ORG_UPDATE_TO_CAS" = "Failed to modify org table, CASSANDRA";
+"UC/ORG_UPDATE_TO_MYSQL" = "Failed to modify org name table, Mysql.";
+"UC/TARGET_USER_EXIST" = "The user already exists in the target node.";
+"UC/SOURCE_NOT_ARCHITECTURE" = "The originating node is not a real node.";
+"UC/TARGET_NOT_ARCHITECTURE" = "The target node is not a real node.";
+"UC/ORG_EXINFO_UPDATE_ERROR" = "Failed to modify extended info of organization.";
+"UC/USER_EXIST_CURRENT_NODE" = "This is the main node. Reset the user's current node.";
+"UC/USER_EXIST" = "The user already exists in the selected node.";
+"UC/NOT_EMPTY_ORG_ERROR" = "Failed to delete. There are nodes or users in the organization.";
+"UC/REQUEST_UNIQUE_CODE" = "There are same Job IDs in the user list.";
+"UC/REQUEST_UNIQUE_USER_NAME" = "There are same user names in the user list.";
+"UC/REQUEST_UNIQUE_MOBILE" = "There are same phone numbers in the user list.";
+"UC/NODE_EXISTED_USER_NAME" = "The user name already exits.";
+"UC/NODE_EXISTED_USER_CODE" = "The Job ID already exists.";
+"UC/NODE_EXISTED_MOBILE" = "The phone number already exists.";
+
+//注册
+"UC/EMAIL_FORMAT_INVALID" = "Invalid email address format";
+"UC/EMAIL_HAS_REGISTER" = "The email has been used for registration";
+"UC/NO_PERMISSION_JOIN_USER" = "It is not allowed to join the organization. Please contact UC.";
+"UC/REGISTER_OVER_SUM" = "The device has been registered for more than the limit";
+
+"UCC_Msg_RegisterError" = "Failed";
+"UCC_Msg_Send_Email_Success" = "Sent";
+"UCC_Msg_Validate_Email_Failure" = "Failed to validate email";
+
+"UC/EMAIL_SEND_FAILURE" = "Failed to send email";
+"UC/EMAIL_OVER_SUM" = "Already ran out of the chance. Please try tomorrow.";
+"UC/EMAIL_OVER_FREQUENT" = "You have tried too frequently, please try later.";
+
+"UC/ACTIVE_CODE_EXPIRE" = "Email has expired";
+
+//邮箱绑定
+"UC/EMAIL_HAS_BIND" = "User's email address has been bound. Please unbind first.";
+"UC/THIRD_PART_PASSWORD_EMPTY" = "Please set your login password";
+"UC/EMAIL_IS_SOLE_LOGIN" = "Can't unbind. Email address is the unique login mark.";
+
+//99U帐号登陆
+"UC/LOGIN_99U_FAILURE" = "Failed to log in 99U.";
+"UC/WORKID_BLANK" = "The 99U ID is null.";
+"UC/ADD_99USER_FAILURE" = "Failed to add 99U user to UC.";
+
+//第三方用户
+"UC/THIRD_PART_USER_HAS_REGISTER" = "A 3rd-party user has already registered.";
+"UC/THIRD_PART_LOGIN_FAILURE" = "Failed to log in the 3rd-party account.";
+"UC/THIRD_ACCOUNT_NOT_EXIST" = "The 3rd-party account doesn't exist.";
+"UC/THIRD_PART_SOURCE_PLAT_ERROR" = "Invalid source of 3rd-party login";
+
+"UC/QUERY_SIZE_UPTO_LIMIT" = "You can't ask for more than 10 user IDs at a time.";
+
+"UC/LIMIT_INVALID" = "Should not be less than 0.";
+
+"UCC_Msg_NoNetwork" = "Network disconnected. Please check network settings.";
+"UCC_Msg_UnknownError" = "Unknown error:%@";
+"UCC_Msg_GetIdentifyCodeError" = "Failed to get OTP. Please try again";
+
+"UC/OPENID_NOT_EXIST" = "Unbound tripartite ID";
+
+
+"UCCOrgViewController_loading_org" = "Loading organizations...";
+"UCCOrgSearchComponent_searching" = "searching";
+"UCCOrgSearchComponent_no_result" = "No result";
+"UCCOrgSearchComponent_failure" = "Bad request";
+"UCCOrgSearchComponent_search_org" = "Search";
+"UCComponent_org" = "Organization";
+"UCCLoginViewController_logining" = "Logging in...";
+"UCCLoginViewController_login" = "Login";
+"UCCLoginViewController_sms_login" = "SMS Login";
+"UCCLoginViewController_password" = "Enter password";
+"UCCLoginViewController_loginName" = "Enter account";
+"UCCLoginViewController_identify" = "Please enter OTP";
+"UCCLoginViewController_third_party_login" = "Third-Party Login";
+"UCCLoginViewController_Org_Selector_Title" = "Join in the organization ";
+
+"UCCLoginViewController_userprotocol" = "Terms and Privacy";
+"UCCLoginViewController_userprotocolmessage" = "Dear user, you need to read and accept the User Agreement before using our product.";
+"UCCLoginViewController_acceptuserprotocol" = "I have read and accepted ";
+"UCCLoginViewController_useragreement" = "User Agreement";
+"UCCLoginViewController_custumerservice" = "Customer Service:";
+
+"UCCLoginViewController_no_account" = "No account?";
+"UCCLoginViewController_register" = "Register";
+"UCCLoginViewController_forget_password" = "Forgot password?";
+"UCCRegisterViewController_register" = "Register";
+"UCCRegisterViewController_input_mobile" = "please enter phone number";
+"UCCRegisterViewController_identify" = "Please enter OTP";
+"UCCRegisterViewController_input_msg_code" = "Please enter sms OTP";
+"UCCRegisterViewController_set_password" = "Password";
+"UCCRegisterViewController_set_CountryCode" = "Country and Region";
+"UCCRegisterViewController_select_default" = "+86 china";
+"UCCRegisterViewController_input_password" = "Please enter password";
+"UCCRegisterViewController_check_password" = "Confirm password";
+"UCCRegisterViewController_input_password_again" = "Please enter password again";
+"UCCRegisterViewController_next_step" = "Confirm";
+"UCCRegisterViewController_commit" = "Submit";
+"UCCRegisterViewController_empty_phoneNumber" = "please enter phone number";
+"UCCRegisterViewController_password_not_match" = "Two passwords don't match";
+"UCCRegisterViewController_registering" = "registering...";
+"UCCRegisterViewController_register_success" = "Successful";
+
+"UCCResertPasswordViewController_find_password" = "Retrieve Password";
+"UCCResertPasswordViewController_input_mobile" = "please enter phone number";
+"UCCResertPasswordViewController_input_msg_code" = "Please enter sms OTP";
+"UCCResertPasswordViewController_set_password" = "Password";
+"UCCResertPasswordViewController_input_password" = "Please enter password";
+"UCCResertPasswordViewController_check_password" = "Confirm password";
+"UCCResertPasswordViewController_input_password_again" = "Please enter password again";
+"UCCResertPasswordViewController_commit" = "Submit";
+"UCCResertPasswordViewController_empty_phoneNumber" = "please enter phone number";
+"UCCResertPasswordViewController_wrong_format_phoneNumber" = "Invalid number";
+"UCCResertPasswordViewController_password_not_match" = "Two passwords don't match";
+"UCCRegisterViewController_password_not_in_range" = "A password should be 6 to 12 characters";
+"UCCRegisterViewController_password_contain_illegal_character" = "A password can only contain letters, numbers and ~!@#$%^&*()";
+"UCCRegisterViewController_username_not_in_range" = "An account should be 3 to 18 characters";
+"UCCRegisterViewController_username_contain_illegal_character" = "An account can only contain letters, numbers and _";
+"UCCRegisterViewController_dont_start_with_character" = "An account should start with a letter";
+
+"UCCResertPasswordViewController_resertting_password" = "Resetting password…";
+"UCCResertPasswordViewController_reset_password_success" = "Successful";
+
+"UCCRegisterForInfoViewController_complete_info" = "Complete Your Info";
+"UCCRegisterForInfoViewController_nick_name" = "nickname";
+"UCCRegisterForInfoViewController_input_nick_name" = "Please enter nickname";
+"UCCRegisterForInfoViewController_commit" = "Submit";
+"UCCRegisterForInfoViewController_modifying_user_info" = "Modifying user info";
+"UCCRegisterForInfoViewController_new_user_info" = "Please enter new nickname";
+"UCCRegisterForInfoViewController_modify_failure" = "Failed to modify user info";
+"UCCRegisterForInfoViewController_modify_success" = "Successful";
+
+// 邮箱注册
+"UCCEmailRegisterViewController_title" = "Register via Email";
+"UCCEmailRegisterViewController_input_email" = "Please enter email address";
+"UCCEmailRegisterViewController_input_identify_code" = "Please enter OTP";
+"UCCEmailRegisterViewController_input_email_identify_code" = "Please enter OTP";
+"UCCEmailRegisterViewController_next_step" = "Next";
+"UCCEmailRegisterViewController_wrong_email" = "Invalid email address format";
+"UCCEmailRegisterViewController_check_fail" = "Failed to verify account";
+"UCCEmailRegisterViewController_account_exist" = "This email address has been registered, please log in";
+"UCCEmailRegisterViewController_mobile_register" = "Register via Phone Number";
+
+"UCCEmailRegisterViewController_password_strength" = "Password Security: ";
+"UCCEmailRegisterViewController_password_low" = "Weak";
+"UCCEmailRegisterViewController_password_normal" = "Medium";
+"UCCEmailRegisterViewController_password_high" = "Strong";
+
+"UCCEmailRegisterViewController_password_remind" = "A password should be 8 to 32 digits, containing two kinds of letters, numbers and characters";
+"UCCEmailRegisterViewController_password_contain_illegal_character" = "Password contains illegal character";
+
+"UCCEmailValidateViewController_go_to_login" = "Login";
+"UCCEmailValidateViewController_resend_email" = "Resend email";
+
+"UCCCountDownButton_get_msg_code" = "Send OTP";
+"UCCCountDownButton_resend_msg_code" = "Resend";
+"UCCCountDownButton_resend_msg_code_percent" = "Resend (%td)";
+
+"UCCLogout_loading" = "logout...";
+
+//短信登录
+"UCCSMSLoginViewController_title" = "SMS Login";
+"UCCSMSLoginViewController_sms_login" = "Login";
+
+//图片验证码校验
+"UCCVertifyViewController_title" = "Vertify captcha";
+"UCCVertifyViewController_submit" = "Confirm";
+"UC/CAPTCHA_INVALID" = "Verification code is not correct";
+"UC/CAPTCHA_EXPIRE" = "Verification code is expired";
+"UC/CAPTCHA_URL_EXPIRE" = "Invalid URL";
+"UC/SDP_APP_ID_INVALID" = "SDP APP ID Invalid";
+"UC/SESSION_INVALID" = "session id Invalid";
+"UC/CAPTCHA_TIMES_ERROR" = "captcha failed too many times";
+
+//第三方帐号绑定
+"UC/THIRD_PART_AUTH_FAILURE" = "The third-party platform authentication failed";
+"UC/THIRD_PART_USER_HAS_BINDED" = "The third-party account has been bound";
+"UC/FORBID_BIND_TWO_SAME_THIRD_PLAT_USER" = "Only one account can be bound from the same third-party platform";
+"UC/THIRD_PART_USER_UNBIND" = "The third-party account has not been bound";
+"UC/USER_PERSON_ACCOUNT_CAN_NOT_AUTO_JOIN_ORG" = "The third-party account has not been bound";
+"UC/USER_BIND_PERSON_MISMATCH_THIRD_ACCOUNT_BIND_PERSON" = "The third-party account has been bound";
+"UC/THIRD_PART_USER_NOT_ALLOWED_UNBIND" = "It is not allowed to unbind the account";
+"UCCThirdAccountViewController_bind_success" = "Successful";
+"UCCThirdAccountViewController_bind_failure" = "Failed";
+"UCCThirdAccountViewController_unbind_title" = "Unbind";
+"UCCThirdAccountViewController_unbind_message" = "Confirm to unbind the third-party account?";
+"UCCThirdAccountViewController_unbind_success" = "Successful";
+"UCCThirdAccountViewController_unbind_failure" = "Failed";
+"UCCThirdAccountViewController_title" = "Third-Party Account";
+"OILLoginViewController_Third_Party_Logining" = "Login";
+
+//邮箱绑定
+"UCCBindEmailViewController_email_address" = "Email address";
+"UCCBindEmailViewController_title" = "Bind Email";
+"UCCBindEmailViewController_input_email" = "Please enter email address";
+
+"UCCBindEmailViewController_right_button_title_edit" = "Edit";
+"UCCBindEmailViewController_right_button_title_save" = "Save";
+
+"UCCBindEmailViewController_bound_string" = "Bound";
+"UCCBindEmailViewController_notbound_string" = "Unbound";
+"UCCBindEmailViewController_verified_string" = "Verified";
+"UCCBindEmailViewController_not_verified_string" = "Unverified";
+
+"UCCBindEmailViewController_commit_button_title" = "Bind Email Address";
+"UCCBindEmailViewController_bind_failure_string" = "Failed.";
+"UCCBindEmailViewController_bind_success_string" = "Successful. Please verify through your email.";
+"UCCBindEmailViewController_unbind_failure_string" = "Failed to unbind.";
+"UCCBindEmailViewController_unbind_success_string" = "Successful. The email for login has been changed.";
+"UCCBindEmailViewController_unbind_string" = "Unbind";
+"UCCBindEmailViewController_notbound_label" = "Please verify your email address after getting bound.";
+"UCCBindEmailViewController_not_verified_label" = "Please verify your email address first.";
+"UCCBindEmailViewController_verified_label" = "You should verify your email address after you changed it.";
+"UCCBindEmailViewController_change_success_string" = "Successful. Please verify your email address in time.";
+"UCCBindEmailViewController_change_failure_string" = "Fail to change your email";
+
+// 选择国家和区号
+
+"UCCCountrySelectViewController_title" = "Select country and area code";
+"UCCCountrySelectViewController_back" = "Back";
+
+// 修改密码
+
+"UCCChangePasswordViewController_normal_navigation_title" = "Change Password";
+"UCCChangePasswordViewController_initial_navigation_title" = "Modify Initial Password";
+"UCCChangePasswordViewController_change_password_button_title" = "Change Password";
+"UCCChangePasswordViewController_original_password_field_placeholder" = "Old Password";
+"UCCChangePasswordViewController_new_password_field_placeholder" = "A new password should be 6 to 12 characters, including letters, numbers and special symbols.";
+"UCCChangePasswordViewController_repeat_password_field_placehodler" = "Confirm Password";
+"UCCChangePasswordViewController_change_initial_password_inform" = "For the sake of your account security, it is suggested to modify the initial password.";
+"UCCChangePasswordViewController_change_password_success" = "Modified";
+"UCCChangePasswordViewController_new_password_and_repear_password_not_same" = "Two passwords you entered don't match";
+
+"UCCResetPasswordJudgeVC_account_not_exist" = "Account doesn't exist, please enter again";
+"UCCResetPasswordJudgeVC_account_not_bind" = "Account hasn't been bound with any phone number and email address, please contact admin.";
+"UCCResetPasswordJudgeVC_header_title" = "Enter your email address or phone number";
+"UCCResetPasswordJudgeVC_header_placeholder" = "Please enter your email";
+
+"UCCEmailResetPasswordVC_validate_by_email" = "Verify through email";
+"UCCEmailResetPasswordVC_validate_by_mobile" = "Verify through phone number";
+"UCCEmailResetPasswordVC_first_label" = "We have sent an email to ";
+"UCCEmailResetPasswordVC_end_label" = ", please check the email in time";
+"UCCEmailResetPasswordVC_mobile_unavailable" = "Reset through email";
+"UCCEmailResetPasswordVC_email_unavailable" = "Reset through phone number";
+
+"UCCCompletePasswordVC_head_label_level_low" = "A password should be 6 to 32 digits. It is suggested to use the combination of numbers, letters and characters.";
+"UCCCompletePasswordVC_head_label_level_normal_high" = "A password should be 6 to 32 digits. A strong password should be the combination of numbers, letters and characters.";
+"UCC_Msg_password_level_low_byte_error" = "A password should be 6 to 32 digits.";
+"UCC_Msg_password_level_normal_byte_error" = "A password should be 8 to 32 digits, containing two kinds of letters, numbers and characters";
+"UCC_Msg_password_level_high_byte_error" = "A password should be 8 to 32 digits, containing numbers, letters and characters.";
+"UCC_Msg_password_level_normal_high_tip" = "Please try the combination of numbers, letters and characters.";
+"UCC_Msg_password_simple_tip" = "Please try the combination of numbers, letters and characters.";
+"UCC_Msg_illegal_character" = "Password contains illegal character";
+"UCC_Msg_reset_failure" = "Failed";
+"UCC_Msg_reset_success" = "Successful";
+
+// 绑定手机
+"UCCTelephoneBindViewController_bind_phone" = "Bind phone number";
+"UCCTelephoneBindViewController_button_bind_phone" = "Next";
+"UCCTelephoneBindViewController_user_protocol" = "It means that you’ve read and agreed to the User Agreement if you continue";
+"UCCTelephoneBindViewController_bind_success" = "Successful";
+"UCCTelephoneBindViewController_need_password_title" = "Please set your password";
+"UCCTelephoneBindViewController_need_password_message" = "A login password is required when using a phone number as an account";
+
+// 帐号安全主界面
+"UCCTelephoneBindMainViewController_account_security" = "Account Security";
+"UCCTelephoneBindMainViewController_telephone_bind" = "Bind phone number";
+"UCCTelephoneBindMainViewController_change_password" = "Change Password";
+"UCCTelephoneBindMainViewController_add_phone_number" = "Unbound";
+"UCCTelephoneBindMainViewController_open_login_device_manage" = "Login device management";
+"UCCTelephoneBindMainViewController_open_login_records" = "Login record";
+"UCCTelephoneBindMainViewController_open_login_unregister" = "注销帐户";
+
+// 绑定手机提示界面
+"UCCTelephoneBindRemindViewController_title_change_telephone" = "Bind phone number";
+"UCCTelephoneBindRemindViewController_telephone_bind" = "Bind phone number";
+"UCCTelephoneBindRemindViewController_change_telephone" = "Change phone number";
+"UCCTelephoneBindRemindViewController_change_telephone_message" = "If you change your phone number, you can log in with the new mobile phone number.";
+
+// 第三方登录后选择绑定方式界面
+"UCCSelectThirdBindModeViewController_title" = "选择创建方式";
+"UCCSelectThirdBindModeViewController_login_btn_title" = "绑定已注册帐号";
+"UCCSelectThirdBindModeViewController_register_btn_title" = "成为新帐号";
+"UCCSelectThirdBindModeViewController_Select_canncel_tip" = "用户取消";
+
+// Change Avatar
+
+"UCCHandlerChangeAvatar_Change_Avatar" = "Change avatar";
+"UCCHandlerChangeAvatar_Take_Photo" = "Take photo";
+"UCCHandlerChangeAvatar_Pick_Photo" = "Choose from album";
+"UCCHandlerChangeAvatar_Cancel" = "Cancel";
+"UCCHandlerChangeAvatar_Show_Big_Photo" = "View large pic";
+"UCCHandlerChangeAvatar_Camera_Cant_Access" = "Camera banned";
+"UCCHandlerChangeAvatar_Change_Camera_Setting" = "Allow access to your camera from device menu: \"Settings\" - \"Privacy\" - \"Camera\".";
+"UCCHandlerChangeAvatar_Confirm" = "Confirm";
+"UCCHandlerChangeAvatar_Change_Photo_Setting" = "无法访问相册.请您在'设置-隐私-照片'把本应用设置为打开状态.";
+"UCCHandlerChangeAvatar_Photo_Library_Cant_Access" = "Album access denied";
+"UCCHandlerChangeAvatar_Changing_Avatar" = "Changing avatar...";
+"UCCHandlerChangeAvatar_Change_Avatar_Fail" = "Successful";
+"UCCHandlerChangeAvatar_Change_Avatar_Success" = "Failed";
+
+// Third-Party Login
+
+"UCCLoginViewController_Please_Install_QQ" = "Please install QQ first";
+"UCCLoginViewController_Please_Install_WeChat" = "Please install Wechat first";
+"UCCLoginViewConttroller_wechat_login" = "WeChat Login";
+"UCCLoginViewConttroller_weibo_login" = "Weibo Login";
+"UCCLoginViewConttroller_qq_login" = "QQ Login";
+"UCCLoginViewController_third_party_login" = "Third-Party Login";
+
+"UCCLoginViewConttroller_facebook_login" = "Facebook login";
+"UCCLoginViewConttroller_twitter_login" = "Twitter login";
+"UCCLoginViewConttroller_google_login" = "Google login";
+"UCCLoginViewConttroller_nd99_login" = "ND99 login";
+
+// Third-Account Bind
+"UCCThirdAccountBindViewController_alert_message" = "There is only one step left to log in successfully. Do you want to continue?";
+"UCCThirdAccountBindViewController_bind_title" = "Bind account";
+"UCCThirdAccountBindViewController_binding" = "binging...";
+"UCCThirdAccountBindViewController_bind_org_account_success" = "绑定组织帐户成功";
+
+// Third-Party String
+"UCCThirdAccount_facebook_string" = "Facebook";
+"UCCThirdAccount_twitter_string" = "Twitter";
+"UCCThirdAccount_qq_string" = "QQ";
+"UCCThirdAccount_weibo_string" = "Weibo";
+"UCCThirdAccount_wechat_string" = "Wechat";
+"UCCThirdAccount_nd99_string" = "ND99";
+"UCCThirdAccount_google_string" = "Google";
+
+// Character Selection
+"UCCCharacterSelectionViewController_Select_Character" = "Choose Login Identity";
+"UCCCharacterSelectionViewController_Select_A_Character_Please" = "Please choose an identity";
+"UCCCharacterSelectionViewController_Update_Fail" = "Failed to update identity, please try again";
+"UCCCharacterSelectionViewController_Confirm" = "Done";
+
+// 统计事件
+"UCCEvent_wechat_login_click" = "Wechat Login";
+"UCCEvent_qq_login_click" = "QQ Login";
+"UCCEvent_weibo_login_click" = "Weibo Login";
+"UCCEvent_facebook_login_click" = "Facebook Login";
+"UCCEvent_twitter_login_click" = "Twitter Login";
+"UCCEvent_google_login_click" = "Google Login";
+"UCCEvent_nd99_login_click" = "ND99 Login";
+
+"UCCEvent_login_button_click" = "Click Login";
+"UCCEvent_register_button_click" = "Click Register";
+"UCCEvent_reset_password_button_click" = "Click Forgot Password";
+
+"UCCEvent_login_page_show" = "User Login Page";
+"UCCEvent_reset_password_page_show" = "Forgot Password Page";
+"UCCEvent_mobile_register_page_show" = "Phone Number Registration Page";
+"UCCEvent_email_register_page_show" = "Email Registration Page";
+
+"UCCEvent_email_register_success" = "Successful";
+"UCCEvent_mobile_register_success" = "Successful";
+
+// 选择帐号
+"UCCCAccountSelectionViewController_title_set_default_user" = "Set default user";
+"UCCCAccountSelectionViewController_set_default_user" = "Set default user";
+"UCCCAccountSelectionViewController_default_user" = "Default user";
+"UCCCAccountSelectionViewController_title_switch_user" = "Switch user";
+"UCCCAccountSelectionViewController_tip_select_account" = "Please select a user";
+"UCCCAccountSelectionViewController_tip_set_default_user_success" = "Successful";
+"UCCCAccountSelectionViewController_switch_user_success" = "Successful";
+"UCCCAccountSelectionViewController_switch_user_fail" = "Failed";
+"UCCCAccountSelectionViewController_set_default_user_fail" = "Failed";
+// 组织相关
+"UCCOrgSelectViewController_title_select_org" = "Select an organization";
+"UCCOrgSelectViewController_title_change_org" = "Switch organization";
+"UCCOrgSelectViewController_Select_Character" = "Choose login organization";
+"UCCOrgSelectViewController_Select_A_Character_Please" = "Please choose an organization";
+"UCCOrgSelectViewController_Confirm" = "Done";
+//下线通知 
+"UCComponent_offline_notice" = "Offline Notice";
+"UCComponent_account_expire_login_again" = "Your account is offline. Please log in again.";
+"UCComponent_sure" = "Confirm";
+
+//安全中心-绑定手机
+"UCComponent_security_bindmobile_tips" = "为保护您的帐号安全，请您及时绑定手机号";
+"UCComponent_security_bindmobile_back" = "It would be treated as abandoning this login if you return, confirm abandoning?";
+"UCComponent_security_bindmobile_back_notice" = "Prompt";
+"UCComponent_security_bindmobile_skip" = "Skip";
+"UCComponent_security_setup_password_tips" = "After setting password, you can login with this phone number and password.";
+"UCComponent_security_bindmobile_alert_tips" = "绑定手机，让帐号更加安全";
+"UCCBindMobileViewController_bind" = "Binding";
+"UCComponent_security_alert_bind" = "Bind right now";
+"UCComponent_security_change_pwd_tips" = "You are modifying password, and password cannot less than 6 characters.";
+"UCComponent_security_change_pwd_confirm" = "Confirm";
+
+//视力辅助支持
+"UCComponent_voiceover_avatar_image" = "Avatar image";
+"UCComponent_voiceover_selected" = "Selected";
+"UCComponent_voiceover_unselected" = "Unchecked";
+"UCComponent_voiceover_already_show_password" = "Password displayed";
+"UCComponent_voiceover_already_hide_password" = "Password hidden under asteriks";
+"UCComponent_voiceover_show_password" = "Show Password";
+"UCComponent_voiceover_hide_password" = "Hide password";
+"UCComponent_voiceover_left_image" = "Picture placed in Input box";
+"UCComponent_voiceover_vertify_image" = "Captcha image";
+
+//用户协议
+"UCComponent_user_protocol_agree" = "Agree";
+"UCComponent_user_protocol_disagree" = "Disagree";
+"UCComponent_user_protocol_slight_pause" = ",";
+"UCComponent_user_protocol_slight_and" = "and";
+"UCComponent_user_protocol_full_stop" = "。";
+"UCAdapterComponent_user_protocol_toast_prefix" = "请先勾选同意";
+"UCAdapterComponent_user_protocol_alert_title" = "Friendly Reminders";
+"UCAdapterComponent_user_protocol_alert_content_one" = "感谢您使用";
+"UCAdapterComponent_user_protocol_alert_content_product_name" = "湖北教育云";
+"UCAdapterComponent_user_protocol_alert_confirm_cancel" = "Continue to quit";
+"UCAdapterComponent_user_protocol_alert_confirm_agree" = "Got it";
+"UCAdapterComponent_user_protocol_download" = "获取用户协议";
+"UCAdapterComponent_user_protocol_download_error" = "获取用户协议失败";
+
+//第一次安装
+"UCAdapterComponent_user_protocol_alert_first_install_content_three" = "！为了更好地保障您的个人权益，在使用我们的产品前，请您充分阅读并理解";
+"UCAdapterComponent_user_protocol_alert_first_install_content_four" = "各条款，我们将按条款内容合法收集、使用和共享您的个人信息。";
+"UCAdapterComponent_user_protocol_alert_first_install_sub_tips" = "如您同意此政策，请点击“同意”开始接受我们的服务";
+"UCAdapterComponent_user_protocol_alert_first_install_confirm_tips" = "将严格按照上述政策为您提供服务，若您不同意我们的政策，将无法继续使用我们的产品。";
+
+//未同意
+"UCAdapterComponent_user_protocol_alert_not_agree_content_three" = "！为了更好地保障您的个人权益，在使用我们的产品前，请您充分阅读并理解";
+"UCAdapterComponent_user_protocol_alert_not_agree_content_four" = "各条款，我们将按条款内容合法收集、使用和共享您的个人信息。";
+"UCAdapterComponent_user_protocol_alert_not_agree_sub_tips" = "如您同意条款，请点击“同意”开始接受我们的服务";
+"UCAdapterComponent_user_protocol_alert_not_agree_confirm_tips" = "将严格按照上述条款为您提供服务，若您不同意我们的条款，将无法继续使用我们的产品。";
+
+//更新
+"UCAdapterComponent_user_protocol_alert_update_content_three" = "！为了更好地保障您的个人权益，我们对条款进行了更新，请您充分阅读并理解";
+"UCAdapterComponent_user_protocol_alert_update_content_four" = "更新内容，我们将按条款内容合法收集、使用和共享您的个人信息。";
+"UCAdapterComponent_user_protocol_alert_update_sub_tips" = "如您同意更新内容，请点击“同意”继续接受我们的服务";
+"UCAdapterComponent_user_protocol_alert_update_confirm_tips" = "将严格按照新的条款为您提供服务，若您不同意此次更新，将无法继续使用我们的产品。";
+"UCAdapterComponent_user_protocol_alert_update_title" = "条款更新";
+
+//注册
+"UCAdapterComponent_user_protocol_alert_register_content_three" = "！为了更好地保障您的个人权益，在注册前，请您充分阅读并理解";
+"UCAdapterComponent_user_protocol_alert_register_content_four" = "各条款，我们将按条款内容合法收集、使用和共享您的个人信息。";
+"UCAdapterComponent_user_protocol_alert_register_sub_tips" = "如您同意条款内容，请点击“同意”开始注册~";
+"UCAdapterComponent_user_protocol_alert_register_confirm_tips" = "将严格按照上述条款为您提供服务，若您不同意条款内容，将退出注册流程。";
+
+//微信迁移
+"UCComponent_wechat_transfer_valid_session" = "迁移失败";
+"UCComponent_wechat_transfer_has_login_to_jayme" = "是否曾使用微信登录过JayMe";
+"UCComponent_wechat_transfer_yes" = "Yes";
+"UCComponent_wechat_transfer_no" = "No";
+"UCComponent_wechat_transfer_main_change_tips" = "JayMe微信主体变更通告";
+"UCComponent_wechat_transfer_main_change_reason" = "由于原来旧的注册公司要注销了，Jayme微信主题变更，需要用户输入原已绑定的手机号码进行二次确认，才能正常登入Jayme。";
+"UCComponent_wechat_transfer_input_mobile" = "请输入已在JayMe绑定微信的有效手机号码";
+"UCComponent_wechat_transfer_it_is_me" = "没错这就是我，快让我登录吧";
+"UCComponent_wechat_transfer_wrong_mobile" = "我好像输错手机号了";
+"UCComponent_wechat_transfer_reset_input" = "Enter again";
+"UCComponent_wechat_transfer_input_identify_code" = "请输入右侧验证码";
+"UCComponent_wechat_transfer_valid_user" = "该号码未绑定任何微信号，请重新输入";
+
+"UCComponent_fail_to_load_data_please_try_again" = "加载数据失败，请重试";
+
+//v1.1新错误码
+
+//下发短信验证码
+"UC/INVALID_MOBILE_NUMBER" = "Invalid phone number";
+"UC/INVALID_IDENTIFY_CODE" = "Invalid verification code";
+
+//下发邮箱验证码
+"UC/INVALID_EMAIL" = "Invalid email address";
+
+//认证
+
+//短信登录
+"UC/INVALID_SMS" = "Invalid OTP";
+"UC/SMS_CODE_ERROR_OVER_SUM" = "Too many failed SMS verification attempts.";
+
+//令牌置换
+"UC/INVALID_USER_ID" = "Invalid verification code";
+"UC/INVALID_ACCOUNT_ID" = "Invalid verification code";
+
+//个人帐户
+//注册
+"UC/INVALID_MOBILE" = "Invalid phone number";
+"UC/INVALID_USERNAME" = "The user name format is not correct. It should start with a letter. It can contain letters, numbers,_. And 20 characters at most.";
+"UC/INVALID_NICK_NAME" = "User alias can neither exceed 100 bytes in length nor contain sensitive words.";
+"UC/INVALID_EMAIL_CODE" = "Incorrect email verification code";
+"UC/EMAIL_CODE_EXPIRED" = "Email verification code is not sent or expired.";
+"UC/EMAIL_CODE_ERROR_OVER_SUM" = "邮件验证码一天内输入错误次数超过超过上限";
+"UC/EMAIL_REGISTED" = "邮箱已注册";
+"UC/MOBILE_REGISTED" = "该手机号已经注册";
+"UC/HAS_BINGED_ORG_ACCOUNTS" = "组织帐户已被绑定";
+"UC/PERSION_ACCOUNT_NOT_ALLOWED_JION " = "组织不允许加入";
+"UC/JOIN_ORG_APPLY_SUBMITTED" = "Application for joining the organization has been submitted.";
+
+//密码
+"UC/INVALID_PASSWORD" = "Invalid password";
+
+//个人帐户
+"UC/INVALID_PASSPORT" = "Invalid passport number";
+"UC/INVALID_ID_CARD" = "Invalid ID Number";
+"UC/NEED_BIND_MOBILE_OR_EMAIL" = "The account needs to be bound to a phone number or an email.";
+"UC/INVALID_REAL_NAME" = "无效的用户姓名";
+
+//绑定
+"UC/EMAIL_NOT_EXIST" = "帐户未绑定邮箱";
+"UC/EMAIL_IS_ONLY_LOGIN_CREDENTIALS" = "Can't unbind. Email address is the unique login mark.";
+"UC/EMAIL_HAS_BIND_NOTVALID" = "用户邮箱已绑定，未确认，请前往邮箱确认";
+"UC/INVALID_VALIDATE_CODE" = "邮箱验证码错误";
+
+"UCComponent_input_password_view_title" = "Enter password";
+"UCComponent_input_password_view_message" = "请输入帐户密码";
+
+"UCComponent_unbind_email_tips_view_title" = "Unbind email";
+"UCComponent_unbind_email_tips_view_message" = "是否解绑邮箱？";
+
+"UCComponent_change_password_tips" = "您正在修改-帐号的密码，请确保新密码不少于6位";
+
+
+
+//1.1登录注册
+"NDUCOrgSelectTableViewController_title" = "Select an organizational account";
+"NDUCOrgSelectTableViewController_fetch_data_error" = "Failed to obtain data.";
+"NDUCCDetectViewController_bind_account_title" = "Bind person account";
+"NDUCCDetectViewController_bind_mobile_title" = "Bind phone number";
+"NDUCCDetectViewController_check_password_title" = "Change Password";
+"NDUCCDetectViewController_bind_org_account_title" = "Bind Organization Account";
+"NDUCCDetectViewController_finish_check_title" = "检测完成";
+
+"NDUCBindOrgViewController_tip_string_begin" = "新增组织帐号";
+
+"NDUCMobileRegisterViewController_login" = "Login";
+"NDUCPersonalForgetPasswordViewController_title" = "Find person account password";
+"NDUCOrgUserForgetPasswordViewController_title" = "Find organization account password";
+"NDUCForgetPasswordMainViewController_personal_alert_desc" = "Need to perform security verification";
+"NDUCForgetPasswordMainViewController_org_alert_desc" = "Need to organize";
+"NDUCCJobAccountLoginViewController_register" = "Register";
+"NDUCCJobAccountLoginViewController_title" = "Job number";
+"NDUCCGraphVertifyViewController_title" = "Graphic verification";
+"NDUCCGraphVertifyViewController_tips" = "To protect your account, please complete the verification below";
+"NDUCCGraphVertifyViewController_input_idcode_tips" = "Please enter OTP";
+"NDUCCGraphVertifyViewController_input_idcode_placeholder_tips" = "Enter verification code";
+"NDUCCGraphVertifyViewController_input_idcode_success" = "验证码校验成功";
+"NDUCOrgSelectSectionHeader_title" = "Bound organization accounts";
+"NDUCOrgSelectSectionHeader_tips" = "Bound organization accounts";
+"NDUCCAccountLockedTipView_tip_title" = "Lock account";
+"NDUCCAccountLockedTipView_tip_cd" = "Countdown";
+"NDUCCAccountLockedTipView_tip_cd_minutes" = "Score";
+"NDUCCAccountLockedTipView_tip_cd_seconds" = "second";
+"UCCSelectCountryInputView_country_label_text" = "Mobile phone attribution";
+"UCCGraphValidateInputView_click_to_refresh" = "Click to refresh.";
+"UCCWhiteBgButton_require_string" = "Select organization account";
+"NDUCCChooseLoginTypeCoordinator_alert_cancel" = "Cancel";
+"NDUCCChooseLoginTypeCoordinator_alert_title_org_code_login" = "Job number";
+"NDUCCChooseLoginTypeCoordinator_alert_title_personal_login" = "手机号\\邮箱登录";
+"NDUCCChooseLoginTypeView_choose_type_button_title" = "other login ways";
+"NDUCCChooseLoginTypeView_guest_mode_button_title" = "使用游客模式登录";
+"NDUCChooseOrgCoordinator_require_org_code" = "Please enter the job number";
+"NDUCChooseOrgCoordinator_require_org" = "Please choose the organization";
+"NDUCChooseOrgCoordinator_require_pwd" = "Please enter password";
+"NDUCChooseOrgView_title" = "Add organization account";
+"NDUCChooseOrgCoordinator_next" = "Next";
+"NDUCChooseOrgCoordinator_ask_for_join_org" = "Apply to join the organization";
+"NDUCChooseOrgCoordinator_have_not_pwd" = "Don't have org user code? ";
+"NDUCInputMobileCoordinator_default_country" = "China";
+"NDUCInputMobileCoordinator_alert_msg_mobile" = "Phone Number";
+"NDUCInputMobileCoordinator_alert_go_to_login_msg_desc" = "已注册，可以直接进行登录";
+"NDUCInputMobileCoordinator_alert_action_title" = "Enter again";
+"NDUCInputMobileCoordinator_error_tips_mobile_is_register" = "Mobile is registered";
+"NDUCInputMobileCoordinator_alert_action_human_custom" = "Manual appeal";
+"NDUCInputMobileCoordinator_alert_msg_desc" = "您没有绑定个人帐户，请通过人工申诉进行验证，电话：";
+"NDUCInputMobileCoordinator_alert_title" = "Tip";
+"NDUCInputMobileCoordinator_mobile_unavailable" = "Phone number is not available?";
+"NDUCInputMobileCoordinator_change_valid_type" = "Replace other verification methods";
+"NDUCInputMobileCoordinator_title_mobile_register" = "Sign up by mobile";
+"NDUCInputMobileCoordinator_title_mobile_check" = "Enter tel.";
+"NDUCInputMobileCoordinator_title_mobile_bind" = "input mobile phone number";
+"NDUCInputMobileCoordinator_title_personal_forget_pwd" = "safety verification";
+"NDUCInputMobileCoordinator_title_org_forget_pwd" = "safety verification";
+"NDUCCJobAccountLoginView_login_btn_title" = "Login";
+"NDUCCJobAccountLoginViewCoordinator_account_error_tips" = "请输入正确的帐号!";
+"NDUCCJobAccountLoginViewCoordinator_account_lock_tips" = "由于验证码错误次数达到上限，因此为了您的帐户安全，暂停使用该功能，请于今日0点之后再次使用";
+"NDUCCOrgCommitedTipView_tip_title" = "Application has been submitted, please wait";
+"NDUCCOrgCommitedTipView_commit_btn_title" = "Back";
+"NDUCCOrgCommitedTipView_error_tip_ask_to_join" = "您已提交申请加入%@组织，审核期为48小时，请耐心等待。";
+"NDUCCPhoneEmailLoginViewCoordinator_alert_msg_bind_mobile" = "为了您的帐号安全，请绑定手机，有助于更好的使用平台功能";
+"NDUCCPhoneEmailLoginViewCoordinator_aler_bind_mobile_action_cancel" = "Not bound yet";
+"NDUCCPhoneEmailLoginViewCoordinator_aler_bind_mobile_action_bind" = "Bind mobile";
+"NDUCCPhoneEmailLoginView_inputmobileview_placeholder" = "请输入手机号或邮箱";
+"NDUCCSetPasswordCoordinator_find_pwd_success_tips" = "Retrieve the password successfully!";
+"NDUCCSetPasswordView_default_commit_btn_title" = "Complete registration";
+"NDUCCSetPasswordView_default_title" = "Password";
+"NDUCCSetPasswordView_forget_pwd_title" = "Reset password";
+"NDUCCSetPasswordView_personal_check_tips" = "手机号未注册，设置密码后可使用改帐号登录";
+"NDUCCSetPasswordView_personal_commit_btn_title" = "Complete binding";
+"NDUCCSetPasswordView_check_commit_btn_title" = "Modify";
+"NDUCCSetPasswordView_tips_for_personal_forget_pwd" = "正在修改帐号%@的密码";
+"NDUCCSetPasswordView_tips_for_org_forget_pwd" = "正在修改组织%@所属帐户%@的密码";
+"NDUCCSetPasswordView_tips_for_pwd_length" = "please enter a password of 8-16 digits";
+"NDUCCSetPasswordView_tips_for_pwd_length_and_space" = "长度为8-16个字符，不能有空格";
+"NDUCCSetPasswordView_tips_for_pwd_charset" = "至少包含数字\\大小写字母\\英文符号两种组合";
+"NDUCSMSCodeView_title" = "Please enter the OTP";
+"NDUCSMSCodeView_tips_front" = "已向";
+"NDUCSMSCodeView_tips_last" = "发送验证码短信，请输入验证码";
+"NDUCCJobAccountLoginViewCoordinator_account_lock_title" = "Error limit";
+"NDUCSMSCodeCoordinator_bind_mobile_valid_success_tips" = "Successful";
+"NDUCSMSCodeCoordinator_valid_success_tips" = "Verification success!";
+"NDUCCDetectViewController_check_init_password_title" = "Modify Initial Password";
+"NDUCChooseOrgCoordinator_complete" = "Done";
+"NDUCOrgSelectSectionHeader_title_joined_org" = "Joined organizations";
+"NDUCChooseOrgCoordinator_join_apply_send_success" = "Application for the organization are under review, please wait.";
+"NDUCCSetPasswordView_commit_btn_title" = "Complete registration";
+"NDUCChooseOrgView_title_input_org_user_code" = "填写工号";
+"NDUCSMSCodeCoordinator_bind_relation_false" = "该帐号与手机未绑定";
+"NDUCSMSCodeCoordinator_login_name_has_no_relation_account" = "The employee number hasn't been registered. Please re-enter.";
+"NDUCOrgSelectTableViewController_select_org_success" = "Succeeded";
+"NDUCOrgSelectTableViewController_in_review" = "Reviewing";
+"UCCLoginViewController_alert_mobile_used" = "手机号%@未注册，请先进行注册";
+"UCCLoginViewController_alert_reinput" = "Enter again";
+"UCCLoginViewController_alert_register" = "Register";
+"UCCCountDownButton_resend_sms_code" = "regain captcha";
+"UCCCountDownButton_resend_msg_code_second" = "%tds后重新发送";
+"NDUCInputMobileCoordinator_error_tips_mobile_is_not_register" = "Mobile number is not registered";
+"NDUCInputMobileCoordinator_error_tips_mobile_is_not_bind_with_orgcode" = "手机号尚未绑定此工号，请重新输入";
+
+
+"NDUCComponent_network_error_tips" = "Please check your network and try again.";
+"NDUCComponent_read_and_recept_user_protocol" = "Please read and agree to the relevant agreement";
+
+"NDUCCChooseLoginTypeCoordinator_alert_title_sms_code_login" = "SMS";
+"NDUCCSmsLoginView_smslogin" = "SMS";
+"NDUCCSmsLoginView_mobile_placeholder" = "Enter tel.";
+"NDUCCSmsLoginView_sms_placeholder" = "Please enter OTP";
+"NDUCCLoginHistoryView_choose_type_button_title" = "Switch user";
+"NDUCCThirdListViewController_title" = "Third-Party Login";
+
+//注册页面协议
+"NDUCMobileRegisterViewController_user_protocol_title" = "Terms and Privacy";
+"NDUCMobileRegisterViewController_user_protocol_prefix" = "在开始注册流程之前，需要通过点击同意的形式在线签署协议，请您充分阅读并理解";
+"NDUCMobileRegisterViewController_user_protocol_suffix" = "的条款内容，我们将按条款内容合法收集、使用和共享您的个人信息，若不同意将无法继续注册流程。";
+"NDUCMobileRegisterViewController_user_protocol_agree_and_go_on" = "Agree and continue";
+
+//更新协议
+"NDUCMobileRegisterViewController_user_protocol_update_title" = "Friendly Reminders";
+"NDUCMobileRegisterViewController_user_protocol_update_prefix" = "为了您可以正常的使用服务，需要通过点击同意的形式在线签署协议，请您充分阅读并理解";
+"NDUCMobileRegisterViewController_user_protocol_update_suffix" = "的条款内容，我们将按条款内容合法收集、使用和共享您的个人信息，若不同意将无法继续使用服务。";
+
+//绑定个人帐户协议
+"NDUCMobileRegisterViewController_user_protocol_bind_personal_account_prefix" = "在完成注册流程之前，需要通过点击同意的形式在线签署协议，请您充分阅读并理解";
+"NDUCMobileRegisterViewController_user_protocol_bind_personal_account_suffix" = "的条款内容，我们将按条款内容合法收集、使用和共享您的个人信息，若不同意将无法完成绑定流程。";
+
+"NDUCDetectViewController_weak_passwrod_alert_tips" = "您当前的密码强度弱，为了保障您的帐号安全，请修改旧密码，否则将无法正常使用服务。";
+"NDUCDetectViewController_initial_passwrod_alert_tips" = "Reset the initial password for account security, otherwise, you cannot use the services normally.";
+
+
+"NDUCInputMessageView_Tips" = "Fill in Information";
+"NDUCInputMessageView_subtips" = "Before using the service, please enter your name and submit the product usage application";
+"NDUCInputMessageView_placeholder" = "Name";
+"NDUCReviewViewController_apply_tips" = "Application has been submitted, please wait";
+"NDUCReviewViewController_in_review_tips" = "Under review. Please wait.";
+"NDUCReviewViewController_review_failure_tips" = "Sorry, review rejected";
+
+"NDUCReviewViewController_in_review_subtips" = "您使用产品的申请正在审核中，请等待短信消息通知审核结果～";
+"NDUCReviewViewController_review_failure_subtips" = "Your application is not approved. You can submit it again.";
+"NDUCReviewViewController_review_success_tips" = "Your application has been approved. You can use the service now.";
+"NDUCSnackBar_refresh" = "Refresh";
+
+"NDUCAddOrg_uccess_tips" = "Add success!";
+"NDUCChooseOrgCoordinator_choose_other_org" = "You have joined the organization, please select another organization or bind a new organizational account.";
+"NDUCChooseOrgCoordinator_applying_please_wait" = "Your application is under review. Please be patient.";
+"NDUCChooseOrgView_click_to_apply" = "The organization is allowed to apply for access, please click to join the organization to submit the review.";
+"NDUCChooseOrgView_click_to_join" = "The organization allows direct access, please click to join the organization.";
+"NDUCCOrgCommitedTipView_close" = "Close";
+"NDUCCOrgCommitedTipView_tip_title" = "Application has been submitted, please wait";
+"NDUCCJobAccountLoginViewCoordinator_job_account_error_tips" = "The job number does not exist";
+
+//邮箱相关
+"NDUCCOptionalDetectTipView_tip_next_finish" = "Next Time";
+"NDUCInputMobileCoordinator_title_email_register" = "Register via Email";
+"NDUCSMSCodeView_tips_email_send_last" = "发送验证码邮件，请输入验证码";
+"NDUCInputMobileCoordinator_alert_msg_email" = "Email";
+"NDUCInputMobileCoordinator_alert_go_to_login_msg_desc_email"= "已注册，可以直接登录。";
+"UCCResertPasswordViewController_input_email" = "Please enter the email";
+
+"NDUCInputMobileCoordinator_error_tips_email_is_not_register" = "The mailbox does not exist";
+"NDUCInputMobileCoordinator_error_tips_email_is_not_bind_with_orgcode" = "邮箱尚未绑定";
+
+"NUDC_Email_input_mobile_unavailable" = "Phone number is not available?";
+"NUDC_Email_input_email_unavailable" = "The mailbox is not available?";
+"NUDC_Email_input_email_change_type" = "Replace other verification methods";
+
+"NUDC_Email_forgetpwd_alert_title" = "Tip";
+"NUDC_Email_forgetpwd_alert_content_rengong_tip" = "没有绑定个人帐户时，可以通过人工申诉进行验证，电话";
+"NUDC_Email_forgetpwd_alert_title_rengong" = "Manual customer service";
+"NUDC_Email_forgetpwd_alert_action_mobile" = "Verify through phone number";
+"NUDC_Email_forgetpwd_alert_action_email" = "Verify through email";
+"NUDC_Email_forgetpwd_alert_action_rengong" = "Manual appeal";
+
+"NDUCC_smscode_email_alert_title" = "Prompt";
+"NDUCC_smscode_email_alert_content" = "1、请检查邮件是否在垃圾箱中。\n2、如果还未收到，请重新获取验证码。\n3、如果一直没收到，请更换其他邮箱。";
+"NDUCC_smscode_email_alert_sure" = "Confirm";
+"NDUCC_smscode_email_send_tip" = "You did not receive the message?";
+
+"NDUCCSetPasswordView_tips_for_personal_reset_pwd" = "正在重置帐号%@的密码";
+"NDUCCSetPasswordView_tips_for_org_reset_pwd" = "正在重置组织%@帐号%@的密码";
+"NDUCRegisterViewController_input_correct_mobile" = "Please enter the correct phone number";
+"NDUCRegisterViewController_sms_code_expired" = "验证码已过期，请重新获取";
+"NDUCRegisterViewController_sms_code_invalid" = "Incorrect verification code. Please re-enter.";
+"NDUCInputMobileCoordinator_subtitle_personal_forget_pwd" = "To ensure the security of your account, you need to perform security verification.";
+"NDUCCDetectViewController_detect_failure" = "检测未通过，即将退出";
+"NDUCCSetPasswordView_bind_personal_account_with_email_tips" = "Email not registered, please setting password to login";
+"NDUCCSetPasswordView_email_register_success" = "绑定成功!";
+"NDUCCChooseLoginTypeCoordinator_alert_title_user_name_login" = "Username";
+"NDUCCSelectOrgCoordinator_alert_tips" = "当前的个人帐号已关联以下组织帐号， \n 正在自动切换中...";
+"NDUCCSetPasswordView_valid_old_password" = "Verify old password";
+"NDUCCSetPasswordView_input_old_password" = "输入 %@ 的旧密码";
+"NDUCCSetPasswordView_input_old_password_with_org" = "输入组织 %@ 下 %@ 的旧密码";
+"NDUCBindOrgAccountChain_I_know" = "Got it";
+
+//三方绑定
+"NDUCDetectViewController_bind_person_account_mode_with_mobile_alert_tips" = "For the security of your account, please bind the phone number to help you better use the platform features.";
+"NDUCDetectViewController_bind_person_account_mode_with_email_alert_tips" = "For your account security, please bind your mailbox to help you better use the platform features.";
+"NDUCDetectViewController_bind_person_account_mode_with_mobile_or_email_alert_tips" = "为了您的帐号安全，请绑定手机号或邮箱，有助于更好的使用平台功能。";
+"NDUCCInputEmainView_tips_for_org_forget_password" = "邮箱%@未绑定组织帐号，无法进行安全验证，请重新输入";
+"NDUCCInputMobileView_tips_for_bind_mobile" = "The phone number is already bound to another account, please re-enter";
+"NDUCCInputMobileView_tips_for_bind_email" = "Email is already bound to another account, please re-enter";
+
+//更换时区
+"NDUCRegionAndTimeZoneViewController_region_and_time" = "地区与时间";
+"NDUCRegionAndTimeZoneViewController_get_location_info_error" = "获取定位信息失败";
+"NDUCRegionAndTimeZoneViewController_cannot_get_location_info" = "抱歉，暂时无法获取";
+"NDUCLocationViewController_location" = "Location";
+"NDUCLocationViewController_save" = "Save";
+"NDUCLocationViewController_choose_country" = "请选择所在国家";
+"NDUCLocationViewController_choose_time_zone" = "请选择所在时区";
+"NDUCLocationViewController_login_first" = "Please log in first";
+"NDUCLocationViewController_save_success" = "Saved";
+"NDUCLocationViewController_default" = "未设置，默认";
+"NDUCLocationModel_location_tips_info" = "更改个人信息所在地会同步修正时区，影响系统日期计算（包括签到、时间表等服务），请谨慎更改";
+"NDUCLocationModel_use_current_location_info" = "使用当前位置";
+"NDUCLocationModel_country" = "nation";
+"NDUCLocationModel_province_and_city" = "省市";
+"NDUCLocationModel_time_zone" = "时区";
+"NDUCRegionAndTimeZoneModel_choose_show_time" = "选择显示时间";
+"NDUCRegionAndTimeZoneModel_modify_location" = "快捷修改所在地";
+"NDUCRegionAndTimeZoneModel_follow_device_time" = "跟随设备时间";
+"NDUCRegionAndTimeZoneModel_follow_device_time_tips_info" = "开启后，应用内时间按当前的设备时间显示";
+"NDUCRegionAndTimeZoneModel_location_time" = "所在地时间";
+"NDUCRegionAndTimeZoneModel_location_time_tips_info" = "开启后，应用内时间按系统记录的所在地对应的时区显示时间";
+"NDUCTimeZoneCell_hour_time_different" = "H时差";
+
+//101帐号相关
+"NDUCAccount101_please_input_account_101" = "Enter 101 account";
+"NDUCAccount101_please_input_org_user_code" = "Please enter the job number";
+"NDUCAccount101_please_input_account" = "Please enter your account";
+"NDUCAccount101_account_and_password_mismatching" = "帐号和密码不匹配";
+"NDUCAccount101_please_input_correct_account" = "Please enter a correct account.";
+"NDUCAccount101_account_101_login" = "101 Account";
+"NDUCAccount101_account_101" = "101 Account";
+"NDUCAccount101_org_user_code" = "Job ID";
+"NDUCChooseOrgCoordinator_binding_failure" = "Failed to bind";
+"NDUCForgetPasswordMainViewController_101org_alert_desc" = "Password of 101 account or employee No.";
+"NDUCForgetPasswordMainViewController_101org_only_alert_desc" = "Password of 101 account";
+"NDUCForgetPasswordMainViewController_orgusercode_only_alert_desc" = "Password of employee No.";
+"NDUCForgetPasswordMainViewController_hotline_message" = "您未绑定验证方式，请联系：\n%@";
+"NDUCForgetPasswordMainViewController_not_hotline_message" = "您未绑定验证方式，\n请联系产品管理员沟通！";
+"NDUCCSetPasswordView_tips_for_101account_forget_pwd" = "正在重置101帐号%@的密码";
+"NDUCCSetPasswordView_forget_pwd_101account_error_tips" = "请输入正确的帐号!";
+"NDUCAccount101_real_ID_login" = "真实身份登录";
+"NDUCCSetPasswordView_tips_for_101account_update_pwd" = "正在修改101帐号%@的密码";
+"UCCOrgSelectViewController_title_input_org_account" = "Enter Organization Account";
+
+//1.1错误码
+"UC/INVALID_COUNTRY_CODE" = "国际区号格式不正确";
+"UC/IP_OVER_SUM" = "Already ran out of the chance. Please try tomorrow.";
+"UC/ACCOUNT_UN_ENABLE" = "Account has not been activated";
+"UC/AUTH_UNAVAILABLE_TOKEN" = "Unavailable authorization token";
+"UC/AUTH_DENIED_CROSS_USER" = "只允许同一用户的帐号间令牌的置换";
+"UC/USER_NOT_FOUND" = "成员未找到";
+"UC/USER_BIND_RELATION_NOT_FOUND" = "组织帐户未绑定个人帐户";
+"UC/USER_MOBILE_HAD_BIND" = "成员已绑定手机，不能修改手机号";
+"UC/USER_EMAIL_HAD_BIND" = "成员已绑定邮箱，不能修改邮箱";
+"UC/VALIDATE_CODE_INVALID" = "Invalid verification code";
+"UC/USER_EMAIL_NOT_BIND" = "邮箱未绑定,无须解绑";
+"UC/USER_NOT_BIND_MOBILE" = "组织帐户未绑定手机号";
+"UC/USER_MOBILE_NOT_ACTIVE" = "组织帐户手机绑定状态未激活";
+"UC/MOBILE_NOT_MATCH_USER" = "The phone number does not match the organization account. It's not allowed to use this phone number to modify the password of organization account.";
+"UC/USER_NOT_BIND_EMAIL" = "组织帐户未绑定邮箱";
+"UC/USER_EMAIL_NOT_ACTIVE" = "邮箱不匹配组织帐户,不允许使用该邮箱修改组织帐号密码";
+"UC/INST_NOT_FOUND" = "Institution not found.";
+"UC/INST_INSTAPP_NOT_FOUND" = "机构应用绑定关系不存在";
+"UC/ORG_NOT_FOUND" = "Organization doesn't exist";
+"UC/STRATEGY_NODE_INVISIBLE" = "当前组织对该成员不可见";
+"UC/VERIFY_PWD_LOCKED" = "密码校验错误次数太多，被锁定！请5分钟后再验证";
+"UC/CHECK_BIND_INFO_ERROR_OVER_SUM" = "The number of binding errors cannot exceed 5 times.";
+"UC/INVALID_MOBILE_NUMBER" = "Invalid phone number";
+"UC/USER_HAD_BIND_ACCOUNT" = "The organization account has bound to an individual account.";
+"UC/ONLY_BIND_ONE_THIRD_USER" = "The same personal account can only bind to one third-party account.";
+"UC/THIRD_USER_BINDED_BY_PERSON" = "The same third-party account can only bind to one personal account.";
+"UC/INVALID_SESSION_ID" = "会话已过期，请重新再试";
+"UC/EMAIL_EXPIRED" = "The email has not been delivered or has expired";
+
+
+//用户协议补充
+"MUIEmptyView_error" = "Oops, an error has occurred.";
+"MUIEmptyView_get_user_agreement_failure" = "获取协议失败了！";
+"MUIEmptyView_get_user_agreement_again" = "Reacquire";

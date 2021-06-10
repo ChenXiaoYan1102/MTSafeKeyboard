@@ -1,0 +1,12 @@
+/* 
+  MTCustomKeyboardString.strings
+  MTSafeKeyboard
+
+  Created by APPLE on 2021/6/7.
+  Copyright © 2021 MT. All rights reserved.
+*/
+
+"删除" = "del";
+"空格" = "space";
+"完成" = "finish";
+"SAFE_KEYBOARD_KEY" = "Safe Keyboard";
