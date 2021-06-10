@@ -11,5 +11,4 @@
 #import <MTSafeKeyboard/MTCustomKeyboardView.h>
 #import <MTSafeKeyboard/MTSafeTextField.h>
 #import <MTSafeKeyboard/UITextField+MTSecurity.h>
-#import <MTSafeKeyboard/MTSafeKeyboardHelper.h>
 #import <MTSafeKeyboard/MTTextFieldConst.h>
