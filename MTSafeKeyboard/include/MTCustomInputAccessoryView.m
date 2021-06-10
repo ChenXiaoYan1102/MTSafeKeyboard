@@ -11,6 +11,8 @@
 
 #import <Masonry/Masonry.h>
 
+#import "MTSafeKeyboardHelper.h"
+
 @interface MTCustomInputAccessoryView ()
 
 @property (nonatomic, copy) NSArray *keyboardTitles;

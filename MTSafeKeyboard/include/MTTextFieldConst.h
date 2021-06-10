@@ -26,11 +26,11 @@
 #define POT @"."
 #define ALT @"alt"
 #define PLACE_PLACER @""
-#define SPACE_STRING NSLocalizedStringFromTable(@"空格", @"MTCustomKeyboardString", nil)
-#define DELETE_STRING NSLocalizedStringFromTable(@"删除", @"MTCustomKeyboardString", nil)
-#define FINISH_STRING NSLocalizedStringFromTable(@"完成", @"MTCustomKeyboardString", nil)
-#define TITLE_STRING NSLocalizedStringFromTable(@"安全键盘", @"MTCustomKeyboardString", nil)
-#define OUT_OF_LIMIT_TIP_STRING NSLocalizedStringFromTable(@"长度超出限制", @"MTCustomKeyboardString", nil)
+#define SPACE_STRING MTLocalizedString(@"空格")
+#define DELETE_STRING MTLocalizedString(@"删除")
+#define FINISH_STRING MTLocalizedString(@"完成")
+#define TITLE_STRING MTLocalizedString(@"安全键盘")
+#define OUT_OF_LIMIT_TIP_STRING MTLocalizedString(@"长度超出限制")
 
 #define SEPERATE_SPACE 5.0
 #define LETTER_ITEM_WIDTH ((CGRectGetWidth([UIScreen mainScreen].bounds) - SEPERATE_SPACE * 11) / 10.0)

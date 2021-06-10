@@ -14,6 +14,8 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
+#import "MTSafeKeyboardHelper.h"
+
 @interface MTCustomKeyboardView () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
