@@ -43,6 +43,7 @@
         if (self.keyboardTitles.count) {
             [self.changeTypeButton setTitle:self.keyboardTitles[1] forState:UIControlStateNormal];
         }
+
         [self.finishButton setTitle:FINISH_STRING forState:UIControlStateNormal];
         
         [self bringSubviewToFront:self.line];

@@ -15,11 +15,14 @@ FOUNDATION_EXTERN NSBundle *mtsafekeyboard_resourceBundle(Class class);
 #define MTLocalizedString(key) \
 [MTSafeKeyboardHelper localizedStringForKey:key]
 
+#define MTLocalizedImage(key) \
+[MTSafeKeyboardHelper imageNamed:key]
+
 @interface MTSafeKeyboardHelper : NSObject
 
 + (NSString *)localizedStringForKey:(NSString *)key;
 
-//+ (UIImage *)imageNamed:(NSString *)name;
++ (UIImage *)imageNamed:(NSString *)name;
 
 @end
 

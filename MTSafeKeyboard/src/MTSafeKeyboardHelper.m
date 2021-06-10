@@ -25,14 +25,14 @@ NSBundle *mtsafekeyboard_resourceBundle(Class class) {
 
 @implementation MTSafeKeyboardHelper
 
-
 + (NSString *)localizedStringForKey:(NSString *)key {
     
     return [mtsafekeyboard_resourceBundle([self class]) localizedStringForKey:(key) value:@"" table:nil];
 }
 
-//+ (UIImage *)imageNamed:(NSString *)name {
-//    return [mtsafekeyboard_resourceBundle([self class]) loca:(key) value:@"" table:nil];
-//}
++ (UIImage *)imageNamed:(NSString *)name {
+    
+    return [UIImage imageNamed:name inBundle:mtsafekeyboard_resourceBundle([self class]) compatibleWithTraitCollection:nil];
+}
 
 @end

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MTSafeKeyboard"
-  s.version      = "0.0.3"
+  s.version      = "0.0.5"
   s.summary      = "MTSafeKeyboard的一个简单示范工程."
 
   s.description  = <<-DESC
@@ -22,11 +22,8 @@ Pod::Spec.new do |s|
 
   s.public_header_files = "#{s.name}/*.h", "#{s.name}/include/**/*.h"
   s.source_files = "#{s.name}/**/*.{h,m}"
-  s.resource_bundles = {      
-    # 'com.mt.component.mtsafekeyboard_skin' => ['com.mt.component.mtsafekeyboard_skin/*'],
-    # 'com.mt.component.mtsafekeyboard_i18n' => ['com.mt.component.mtsafekeyboard_i18n/*'],
+  s.resource_bundles = {
     "#{s.name}Bundle" => ["#{s.name}Bundle/*"]
   }
 
 end
-

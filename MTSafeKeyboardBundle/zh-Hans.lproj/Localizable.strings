@@ -1,5 +1,5 @@
 /* 
-  MTCustomKeyboardString.strings
+  Localizable.strings
   MTSafeKeyboard
 
   Created by APPLE on 2021/6/7.
@@ -8,6 +8,6 @@
 
 "删除" = "删除";
 "空格" = "空格";
-"完成" = "完成1";
-"长度超出限制" = "长度超出限制"
+"完成" = "完成";
+"长度超出限制" = "长度超出限制";
 "安全键盘" = "安全键盘";
