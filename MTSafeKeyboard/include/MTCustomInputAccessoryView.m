@@ -40,7 +40,7 @@
         self.keyboardType = type;
         self.backgroundColor = kRGBA(235, 238, 243, 1);
         
-        if (self.keyboardTitles.count) {
+        if (self.keyboardTitles.count > 1) {
             [self.changeTypeButton setTitle:self.keyboardTitles[1] forState:UIControlStateNormal];
         }
 
