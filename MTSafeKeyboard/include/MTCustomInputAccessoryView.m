@@ -42,6 +42,7 @@
         
         if (self.keyboardTitles.count > 1) {
             [self.changeTypeButton setTitle:self.keyboardTitles[1] forState:UIControlStateNormal];
+            self.changeTypeButton.hidden = NO;
         }
 
         [self.finishButton setTitle:FINISH_STRING forState:UIControlStateNormal];
@@ -89,6 +90,7 @@
         _changeTypeButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_changeTypeButton setTitleColor:kRGBA(51,51,51,1) forState:UIControlStateNormal];
         _changeTypeButton.titleLabel.font = [UIFont systemFontOfSize:15];
+        _changeTypeButton.hidden = YES;
         [_changeTypeButton addTarget:self action:@selector(changeTypeAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_changeTypeButton];
         [_changeTypeButton mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -109,7 +111,8 @@
         [self addSubview:_textLabel];
         [_textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.centerX.equalTo(self);
-            make.width.mas_equalTo(200);
+            make.leading.equalTo(self.changeTypeButton.mas_trailing).offset(5);
+            make.trailing.equalTo(self.finishButton.mas_leading).offset(-5);
         }];
     }
     
@@ -126,7 +129,7 @@
         [self addSubview:_finishButton];
         [_finishButton mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.trailing.equalTo(self);
-            make.width.mas_equalTo(80);
+            make.width.mas_equalTo(60);
         }];
     }
  
