@@ -1,0 +1,661 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2ABA39978CA7B8D065B145D7 /* libPods-MTSafeKeyboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 815D7F79C46FFB9E31E5361C /* libPods-MTSafeKeyboard.a */; };
+		8B91A2E42679A67300283895 /* MTCustomKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91A2CE2679A67300283895 /* MTCustomKeyboardView.m */; };
+		8B91A2E52679A67300283895 /* UITextField+MTSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91A2CF2679A67300283895 /* UITextField+MTSecurity.m */; };
+		8B91A2E62679A67300283895 /* MTKeyboardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91A2D32679A67300283895 /* MTKeyboardCollectionViewCell.m */; };
+		8B91A2E72679A67300283895 /* MTSafeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91A2D52679A67300283895 /* MTSafeTextField.m */; };
+		8B91A2E82679A67300283895 /* MTCustomInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91A2D72679A67300283895 /* MTCustomInputAccessoryView.m */; };
+		8B91A2E92679A67300283895 /* MTSafeKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B91A2DB2679A67300283895 /* MTSafeKeyboardHelper.m */; };
+		8B91A2EA2679A68F00283895 /* MTKeyboardCollectionViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B91A2CD2679A67300283895 /* MTKeyboardCollectionViewCell.h */; };
+		8B91A2EB2679A68F00283895 /* MTSafeTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B91A2D02679A67300283895 /* MTSafeTextField.h */; };
+		8B91A2EC2679A68F00283895 /* MTCustomInputAccessoryView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B91A2D12679A67300283895 /* MTCustomInputAccessoryView.h */; };
+		8B91A2ED2679A68F00283895 /* MTTextFieldConst.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B91A2D42679A67300283895 /* MTTextFieldConst.h */; };
+		8B91A2EE2679A68F00283895 /* UITextField+MTSecurity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B91A2D62679A67300283895 /* UITextField+MTSecurity.h */; };
+		8B91A2EF2679A68F00283895 /* MTSafeKeyboard.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B91A2D82679A67300283895 /* MTSafeKeyboard.h */; };
+		8B91A2F02679A6AE00283895 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B91A2DD2679A67300283895 /* Localizable.strings */; };
+		8B91A2F12679A6AE00283895 /* apple@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B91A2E02679A67300283895 /* apple@3x.png */; };
+		8B91A2F22679A6AE00283895 /* apple@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B91A2E12679A67300283895 /* apple@2x.png */; };
+		8B91A2F42679A6DA00283895 /* MTKeyboardCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B91A2CD2679A67300283895 /* MTKeyboardCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B91A2F52679A6DA00283895 /* MTSafeTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B91A2D02679A67300283895 /* MTSafeTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B91A2F62679A6DA00283895 /* MTCustomInputAccessoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B91A2D12679A67300283895 /* MTCustomInputAccessoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B91A2F72679A6DA00283895 /* MTCustomKeyboardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B91A2D22679A67300283895 /* MTCustomKeyboardView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B91A2F82679A6DA00283895 /* MTTextFieldConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B91A2D42679A67300283895 /* MTTextFieldConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B91A2F92679A6DA00283895 /* UITextField+MTSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B91A2D62679A67300283895 /* UITextField+MTSecurity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B91A2FA2679A6DA00283895 /* MTSafeKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B91A2D82679A67300283895 /* MTSafeKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B91A2FB2679A6DA00283895 /* MTSafeKeyboardHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B91A2DA2679A67300283895 /* MTSafeKeyboardHelper.h */; };
+		8B91A2FC2679A6E800283895 /* MTCustomKeyboardView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8B91A2D22679A67300283895 /* MTCustomKeyboardView.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D5F0E5B1B0D99260099CF46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D5F0E461B0D99260099CF46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D5F0E4D1B0D99260099CF46;
+			remoteInfo = NDUCCComponent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D5F0E4C1B0D99260099CF46 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8B91A2FC2679A6E800283895 /* MTCustomKeyboardView.h in CopyFiles */,
+				8B91A2EA2679A68F00283895 /* MTKeyboardCollectionViewCell.h in CopyFiles */,
+				8B91A2EB2679A68F00283895 /* MTSafeTextField.h in CopyFiles */,
+				8B91A2EC2679A68F00283895 /* MTCustomInputAccessoryView.h in CopyFiles */,
+				8B91A2ED2679A68F00283895 /* MTTextFieldConst.h in CopyFiles */,
+				8B91A2EE2679A68F00283895 /* UITextField+MTSecurity.h in CopyFiles */,
+				8B91A2EF2679A68F00283895 /* MTSafeKeyboard.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		30B7C28B6F75055A793A5803 /* Pods-MTSafeKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTSafeKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MTSafeKeyboard/Pods-MTSafeKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		6D5F0E4E1B0D99260099CF46 /* libMTSafeKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMTSafeKeyboard.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5F0E591B0D99260099CF46 /* MTSafeKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTSafeKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5F0E741B0D9B7F0099CF46 /* MTSafeKeyboardBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTSafeKeyboardBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		815D7F79C46FFB9E31E5361C /* libPods-MTSafeKeyboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MTSafeKeyboard.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B91A2CD2679A67300283895 /* MTKeyboardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKeyboardCollectionViewCell.h; sourceTree = "<group>"; };
+		8B91A2CE2679A67300283895 /* MTCustomKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCustomKeyboardView.m; sourceTree = "<group>"; };
+		8B91A2CF2679A67300283895 /* UITextField+MTSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MTSecurity.m"; sourceTree = "<group>"; };
+		8B91A2D02679A67300283895 /* MTSafeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSafeTextField.h; sourceTree = "<group>"; };
+		8B91A2D12679A67300283895 /* MTCustomInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCustomInputAccessoryView.h; sourceTree = "<group>"; };
+		8B91A2D22679A67300283895 /* MTCustomKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCustomKeyboardView.h; sourceTree = "<group>"; };
+		8B91A2D32679A67300283895 /* MTKeyboardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKeyboardCollectionViewCell.m; sourceTree = "<group>"; };
+		8B91A2D42679A67300283895 /* MTTextFieldConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTTextFieldConst.h; sourceTree = "<group>"; };
+		8B91A2D52679A67300283895 /* MTSafeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSafeTextField.m; sourceTree = "<group>"; };
+		8B91A2D62679A67300283895 /* UITextField+MTSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+MTSecurity.h"; sourceTree = "<group>"; };
+		8B91A2D72679A67300283895 /* MTCustomInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCustomInputAccessoryView.m; sourceTree = "<group>"; };
+		8B91A2D82679A67300283895 /* MTSafeKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSafeKeyboard.h; sourceTree = "<group>"; };
+		8B91A2DA2679A67300283895 /* MTSafeKeyboardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTSafeKeyboardHelper.h; sourceTree = "<group>"; };
+		8B91A2DB2679A67300283895 /* MTSafeKeyboardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTSafeKeyboardHelper.m; sourceTree = "<group>"; };
+		8B91A2DE2679A67300283895 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8B91A2DF2679A67300283895 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8B91A2E02679A67300283895 /* apple@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple@3x.png"; sourceTree = "<group>"; };
+		8B91A2E12679A67300283895 /* apple@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple@2x.png"; sourceTree = "<group>"; };
+		8B91A2E32679A67300283895 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1881AE1009F197B96012F4 /* Pods-MTSafeKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTSafeKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-MTSafeKeyboard/Pods-MTSafeKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D5F0E4B1B0D99260099CF46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ABA39978CA7B8D065B145D7 /* libPods-MTSafeKeyboard.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D5F0E561B0D99260099CF46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAD65E6EBF046045F94C33C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D5F0E451B0D99260099CF46 = {
+			isa = PBXGroup;
+			children = (
+				8B91A2CB2679A67300283895 /* MTSafeKeyboard */,
+				8B91A2DC2679A67300283895 /* MTSafeKeyboardBundle */,
+				8B91A2E22679A67300283895 /* MTSafeKeyboardTests */,
+				6D5F0E4F1B0D99260099CF46 /* Products */,
+				F11584DC474004D837DA1D2A /* Pods */,
+				B751DA4B06FDDDCD6623FC8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D5F0E4F1B0D99260099CF46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D5F0E4E1B0D99260099CF46 /* libMTSafeKeyboard.a */,
+				6D5F0E591B0D99260099CF46 /* MTSafeKeyboardTests.xctest */,
+				6D5F0E741B0D9B7F0099CF46 /* MTSafeKeyboardBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B91A2CB2679A67300283895 /* MTSafeKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8B91A2CC2679A67300283895 /* include */,
+				8B91A2D82679A67300283895 /* MTSafeKeyboard.h */,
+				8B91A2D92679A67300283895 /* src */,
+			);
+			path = MTSafeKeyboard;
+			sourceTree = "<group>";
+		};
+		8B91A2CC2679A67300283895 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8B91A2CD2679A67300283895 /* MTKeyboardCollectionViewCell.h */,
+				8B91A2CE2679A67300283895 /* MTCustomKeyboardView.m */,
+				8B91A2CF2679A67300283895 /* UITextField+MTSecurity.m */,
+				8B91A2D02679A67300283895 /* MTSafeTextField.h */,
+				8B91A2D12679A67300283895 /* MTCustomInputAccessoryView.h */,
+				8B91A2D22679A67300283895 /* MTCustomKeyboardView.h */,
+				8B91A2D32679A67300283895 /* MTKeyboardCollectionViewCell.m */,
+				8B91A2D42679A67300283895 /* MTTextFieldConst.h */,
+				8B91A2D52679A67300283895 /* MTSafeTextField.m */,
+				8B91A2D62679A67300283895 /* UITextField+MTSecurity.h */,
+				8B91A2D72679A67300283895 /* MTCustomInputAccessoryView.m */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8B91A2D92679A67300283895 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8B91A2DA2679A67300283895 /* MTSafeKeyboardHelper.h */,
+				8B91A2DB2679A67300283895 /* MTSafeKeyboardHelper.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		8B91A2DC2679A67300283895 /* MTSafeKeyboardBundle */ = {
+			isa = PBXGroup;
+			children = (
+				8B91A2DD2679A67300283895 /* Localizable.strings */,
+				8B91A2E02679A67300283895 /* apple@3x.png */,
+				8B91A2E12679A67300283895 /* apple@2x.png */,
+			);
+			path = MTSafeKeyboardBundle;
+			sourceTree = "<group>";
+		};
+		8B91A2E22679A67300283895 /* MTSafeKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B91A2E32679A67300283895 /* Info.plist */,
+			);
+			path = MTSafeKeyboardTests;
+			sourceTree = "<group>";
+		};
+		B751DA4B06FDDDCD6623FC8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				815D7F79C46FFB9E31E5361C /* libPods-MTSafeKeyboard.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F11584DC474004D837DA1D2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30B7C28B6F75055A793A5803 /* Pods-MTSafeKeyboard.debug.xcconfig */,
+				DE1881AE1009F197B96012F4 /* Pods-MTSafeKeyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8B91A2F32679A6BB00283895 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B91A2F42679A6DA00283895 /* MTKeyboardCollectionViewCell.h in Headers */,
+				8B91A2F52679A6DA00283895 /* MTSafeTextField.h in Headers */,
+				8B91A2F62679A6DA00283895 /* MTCustomInputAccessoryView.h in Headers */,
+				8B91A2F72679A6DA00283895 /* MTCustomKeyboardView.h in Headers */,
+				8B91A2F82679A6DA00283895 /* MTTextFieldConst.h in Headers */,
+				8B91A2F92679A6DA00283895 /* UITextField+MTSecurity.h in Headers */,
+				8B91A2FA2679A6DA00283895 /* MTSafeKeyboard.h in Headers */,
+				8B91A2FB2679A6DA00283895 /* MTSafeKeyboardHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D5F0E4D1B0D99260099CF46 /* MTSafeKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D5F0E621B0D99260099CF46 /* Build configuration list for PBXNativeTarget "MTSafeKeyboard" */;
+			buildPhases = (
+				0BED9D376BC051F73A5F1597 /* [CP] Check Pods Manifest.lock */,
+				6D5F0E4C1B0D99260099CF46 /* CopyFiles */,
+				8B91A2F32679A6BB00283895 /* Headers */,
+				6D5F0E4A1B0D99260099CF46 /* Sources */,
+				6D5F0E4B1B0D99260099CF46 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTSafeKeyboard;
+			productName = NDUCCComponent;
+			productReference = 6D5F0E4E1B0D99260099CF46 /* libMTSafeKeyboard.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6D5F0E581B0D99260099CF46 /* MTSafeKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D5F0E651B0D99260099CF46 /* Build configuration list for PBXNativeTarget "MTSafeKeyboardTests" */;
+			buildPhases = (
+				6D5F0E551B0D99260099CF46 /* Sources */,
+				6D5F0E561B0D99260099CF46 /* Frameworks */,
+				6D5F0E571B0D99260099CF46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D5F0E5C1B0D99260099CF46 /* PBXTargetDependency */,
+			);
+			name = MTSafeKeyboardTests;
+			productName = NDUCCComponentTests;
+			productReference = 6D5F0E591B0D99260099CF46 /* MTSafeKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D5F0E731B0D9B7F0099CF46 /* MTSafeKeyboardBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D5F0E781B0D9B7F0099CF46 /* Build configuration list for PBXNativeTarget "MTSafeKeyboardBundle" */;
+			buildPhases = (
+				6D5F0E721B0D9B7F0099CF46 /* Resources */,
+				AAD65E6EBF046045F94C33C8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTSafeKeyboardBundle;
+			productName = NDUCCComponentBundle;
+			productReference = 6D5F0E741B0D9B7F0099CF46 /* MTSafeKeyboardBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D5F0E461B0D99260099CF46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = MT;
+				TargetAttributes = {
+					6D5F0E4D1B0D99260099CF46 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					6D5F0E581B0D99260099CF46 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					6D5F0E731B0D9B7F0099CF46 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 6D5F0E491B0D99260099CF46 /* Build configuration list for PBXProject "MTSafeKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				"zh-Hans",
+				Base,
+			);
+			mainGroup = 6D5F0E451B0D99260099CF46;
+			productRefGroup = 6D5F0E4F1B0D99260099CF46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D5F0E4D1B0D99260099CF46 /* MTSafeKeyboard */,
+				6D5F0E731B0D9B7F0099CF46 /* MTSafeKeyboardBundle */,
+				6D5F0E581B0D99260099CF46 /* MTSafeKeyboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D5F0E571B0D99260099CF46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B91A2F02679A6AE00283895 /* Localizable.strings in Resources */,
+				8B91A2F12679A6AE00283895 /* apple@3x.png in Resources */,
+				8B91A2F22679A6AE00283895 /* apple@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D5F0E721B0D9B7F0099CF46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BED9D376BC051F73A5F1597 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTSafeKeyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D5F0E4A1B0D99260099CF46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B91A2E52679A67300283895 /* UITextField+MTSecurity.m in Sources */,
+				8B91A2E82679A67300283895 /* MTCustomInputAccessoryView.m in Sources */,
+				8B91A2E72679A67300283895 /* MTSafeTextField.m in Sources */,
+				8B91A2E62679A67300283895 /* MTKeyboardCollectionViewCell.m in Sources */,
+				8B91A2E92679A67300283895 /* MTSafeKeyboardHelper.m in Sources */,
+				8B91A2E42679A67300283895 /* MTCustomKeyboardView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D5F0E551B0D99260099CF46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D5F0E5C1B0D99260099CF46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D5F0E4D1B0D99260099CF46 /* MTSafeKeyboard */;
+			targetProxy = 6D5F0E5B1B0D99260099CF46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B91A2DD2679A67300283895 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B91A2DE2679A67300283895 /* zh-Hans */,
+				8B91A2DF2679A67300283895 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D5F0E601B0D99260099CF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6D5F0E611B0D99260099CF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D5F0E631B0D99260099CF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B7C28B6F75055A793A5803 /* Pods-MTSafeKeyboard.debug.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/Headers/Public\"/**",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6D5F0E641B0D99260099CF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE1881AE1009F197B96012F4 /* Pods-MTSafeKeyboard.release.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Pods/Headers/Public\"/**",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6D5F0E661B0D99260099CF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NDUCCComponentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.com.nd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D5F0E671B0D99260099CF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NDUCCComponentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.com.nd.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6D5F0E791B0D9B7F0099CF46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6D5F0E7A1B0D9B7F0099CF46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D5F0E491B0D99260099CF46 /* Build configuration list for PBXProject "MTSafeKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D5F0E601B0D99260099CF46 /* Debug */,
+				6D5F0E611B0D99260099CF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D5F0E621B0D99260099CF46 /* Build configuration list for PBXNativeTarget "MTSafeKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D5F0E631B0D99260099CF46 /* Debug */,
+				6D5F0E641B0D99260099CF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D5F0E651B0D99260099CF46 /* Build configuration list for PBXNativeTarget "MTSafeKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D5F0E661B0D99260099CF46 /* Debug */,
+				6D5F0E671B0D99260099CF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D5F0E781B0D9B7F0099CF46 /* Build configuration list for PBXNativeTarget "MTSafeKeyboardBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D5F0E791B0D9B7F0099CF46 /* Debug */,
+				6D5F0E7A1B0D9B7F0099CF46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D5F0E461B0D99260099CF46 /* Project object */;
+}

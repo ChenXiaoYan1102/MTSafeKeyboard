@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
                    自定义安全键盘，带符号键盘，字母键盘，数字键盘.
                    DESC
 
-  s.homepage     = "https://github.com/"
+  s.homepage     = "https://github.com/ChenXiaoYan1102/MTSafeKeyboard"
 
   s.license      = "MIT"
 
