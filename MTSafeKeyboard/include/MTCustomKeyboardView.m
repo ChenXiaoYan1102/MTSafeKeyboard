@@ -202,14 +202,7 @@
 
 #pragma mark - Custom Method
 - (void)reloadKeyBoardViewWithType:(MTCustomKeyboardType)keyboardType{
-    if (keyboardType & MTCustomKeyboardTypeDecimalPad) {
-        self.currentKeyboardType = MTCustomKeyboardTypeDecimalPad;
-        [_dataSource removeAllObjects];
-        [_dataSource addObjectsFromArray:_numbers];
-        [_dataSource insertObject:POT atIndex:9];
-        [_dataSource addObject:DELETE_STRING];
-        [_collectionView reloadData];
-    } else if (keyboardType & MTCustomKeyboardTypeLetter) {
+    if (keyboardType & MTCustomKeyboardTypeLetter) {
         self.currentKeyboardType = MTCustomKeyboardTypeLetter;
         [_dataSource removeAllObjects];
         [_dataSource addObjectsFromArray:_numbers];
@@ -218,11 +211,11 @@
         [_dataSource insertObject:SPACE_STRING atIndex:30];
         [_dataSource addObject:DELETE_STRING];
         [_collectionView reloadData];
-    } else if (keyboardType & MTCustomKeyboardTypeCharacters) {
-        self.currentKeyboardType = MTCustomKeyboardTypeCharacters;
+    } else if (keyboardType & MTCustomKeyboardTypeDecimalPad) {
+        self.currentKeyboardType = MTCustomKeyboardTypeDecimalPad;
         [_dataSource removeAllObjects];
-        [_dataSource addObjectsFromArray:_specialLetters];
-        [_dataSource addObject:SPACE_STRING];
+        [_dataSource addObjectsFromArray:_numbers];
+        [_dataSource insertObject:POT atIndex:9];
         [_dataSource addObject:DELETE_STRING];
         [_collectionView reloadData];
     } else if (keyboardType & MTCustomKeyboardTypeNumberPad) {
@@ -230,6 +223,13 @@
         [_dataSource removeAllObjects];
         [_dataSource addObjectsFromArray:_numbers];
         [_dataSource insertObject:PLACE_PLACER atIndex:9];
+        [_dataSource addObject:DELETE_STRING];
+        [_collectionView reloadData];
+    } else if (keyboardType & MTCustomKeyboardTypeCharacters) {
+        self.currentKeyboardType = MTCustomKeyboardTypeCharacters;
+        [_dataSource removeAllObjects];
+        [_dataSource addObjectsFromArray:_specialLetters];
+        [_dataSource addObject:SPACE_STRING];
         [_dataSource addObject:DELETE_STRING];
         [_collectionView reloadData];
     }
@@ -319,7 +319,9 @@
             return;
         }
         NSMutableString *temp = [NSMutableString stringWithString:self.textField.text];
-        self.textField.text = [temp substringToIndex:temp.length - 1];
+        if (temp && temp.length) {
+            self.textField.text = [temp substringToIndex:temp.length - 1];
+        }
         [self.textField refreshTextField];
     } else if ([text isEqualToString:PLACE_PLACER]) {
         

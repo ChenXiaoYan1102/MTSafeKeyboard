@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MTSafeKeyboard"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "MTSafeKeyboard的一个简单示范工程."
 
   s.description  = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "10.0"
 
-  s.source       = { :git => "git@github.com:ChenXiaoYan1102/MTSafeKeyboard.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/ChenXiaoYan1102/MTSafeKeyboard.git", :tag => "#{s.version}" }
 
   s.dependency "Masonry", "~> 1.1.0"
 
