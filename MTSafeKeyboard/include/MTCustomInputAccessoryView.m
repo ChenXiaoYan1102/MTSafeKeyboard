@@ -139,19 +139,18 @@
 - (NSArray *)keyboardTitles {
     if (!_keyboardTitles) {
         NSMutableArray *titles = [NSMutableArray array];
-        if (self.keyboardType & MTCustomKeyboardTypeDecimalPad) {
-            [titles addObject:KEYBOARD_TYPE_NUMBER];
-        }
         if (self.keyboardType & MTCustomKeyboardTypeLetter) {
             [titles addObject:KEYBOARD_TYPE_LETTER];
         }
-        if (self.keyboardType & MTCustomKeyboardTypeCharacters) {
-            [titles addObject:KEYBOARD_TYPE_CHARACTER];
+        if (self.keyboardType & MTCustomKeyboardTypeDecimalPad) {
+            [titles addObject:KEYBOARD_TYPE_NUMBER];
         }
         if (self.keyboardType & MTCustomKeyboardTypeNumberPad) {
             [titles addObject:KEYBOARD_TYPE_DIGITAL];
         }
-        
+        if (self.keyboardType & MTCustomKeyboardTypeCharacters) {
+            [titles addObject:KEYBOARD_TYPE_CHARACTER];
+        }
         _keyboardTitles = [NSArray arrayWithArray:titles];
     }
     
